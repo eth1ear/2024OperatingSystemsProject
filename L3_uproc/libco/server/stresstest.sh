@@ -1,0 +1,1 @@
+./usr/bin/fortio load -qps 0 -n 200000 tcp://localhost:12345

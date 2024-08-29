@@ -1,0 +1,13 @@
+// xv6-riscv/.vscode/tasks.json
+// 在launch之前运行
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "coBuild", // 自行命名
+            "type": "shell",
+            "isBackground": true,
+            "command": "./debug.sh", // 运行我们创建好的debug脚本
+        }
+    ]
+}

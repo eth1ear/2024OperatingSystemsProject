@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "coDebug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/tests/libco-test-64",
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "MIMode": "gdb",
+            // "preLaunchTask": "coBuild",
+            "environment": [
+                {
+                    "name": "LD_LIBRARY_PATH",
+                    "value": "."
+                }
+            ],
+        },
+        {
+            "name": "serverDebug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/server/server",
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "MIMode": "gdb",
+            // "preLaunchTask": "coBuild",
+            "environment": [
+                {
+                    "name": "LD_LIBRARY_PATH",
+                    "value": "."
+                }
+            ],
+        }
+    ]
+}
